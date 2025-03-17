@@ -97,7 +97,7 @@ public class TaskGui extends JFrame {
         taskList = new JList<>(taskListModel);
         taskList.setFont(fieldFont);
         JScrollPane scrollPane = new JScrollPane(taskList);
-        scrollPane.setPreferredSize(new Dimension(screenSize.width,(int)(screenSize.height / 1.5f)));
+        scrollPane.setPreferredSize(new Dimension(screenSize.width,(int)(screenSize.height / 1.4f)));
         add(scrollPane, BorderLayout.SOUTH);
 
         addButton.addActionListener(new ActionListener() {
