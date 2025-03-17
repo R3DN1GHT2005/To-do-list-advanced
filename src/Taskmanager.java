@@ -47,7 +47,7 @@ public void sortTaskDue()
                     String date2=tasks.get(j).getTaskDue().substring(6,10);
                     int year1=Integer.parseInt(date1);
                     int year2=Integer.parseInt(date2);
-                    if (year1<year2)
+                    if (year1>year2)
                     {
                         Task temp=tasks.get(i);
                         tasks.set(i,tasks.get(j));
@@ -59,7 +59,7 @@ public void sortTaskDue()
                         String date4=tasks.get(j).getTaskDue().substring(3,5);
                         int month1=Integer.parseInt(date3);
                         int month2=Integer.parseInt(date4);
-                        if (month1<month2)
+                        if (month1>month2)
                         {
                             Task temp=tasks.get(i);
                             tasks.set(i,tasks.get(j));
@@ -71,7 +71,7 @@ public void sortTaskDue()
                             String date6=tasks.get(j).getTaskDue().substring(0,2);
                             int day1=Integer.parseInt(date5);
                             int day2=Integer.parseInt(date6);
-                            if (day1<day2)
+                            if (day1>day2)
                             {
                                 Task temp=tasks.get(i);
                                 tasks.set(i,tasks.get(j));
@@ -87,7 +87,7 @@ public void sortTaskDue()
                     String date2=tasks.get(j).getTaskDue().substring(6,10);
                     int year1=Integer.parseInt(date1);
                     int year2=Integer.parseInt(date2);
-                    if (year1<year2) 
+                    if (year1>year2) 
                     {
                         Task temp=tasks.get(i);
                         tasks.set(i,tasks.get(j));
@@ -99,7 +99,7 @@ public void sortTaskDue()
                         String date4=tasks.get(j).getTaskDue().substring(3,5);
                         int month1=Integer.parseInt(date3);
                         int month2=Integer.parseInt(date4);
-                        if (month1<month2)
+                        if (month1>month2)
                         {
                             Task temp=tasks.get(i);
                             tasks.set(i,tasks.get(j));
@@ -111,7 +111,7 @@ public void sortTaskDue()
                             String date6=tasks.get(j).getTaskDue().substring(0,2);
                             int day1=Integer.parseInt(date5);
                             int day2=Integer.parseInt(date6);
-                            if (day1<day2)
+                            if (day1>day2)
                             {
                                 Task temp=tasks.get(i);
                                 tasks.set(i,tasks.get(j));

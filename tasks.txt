@@ -1,3 +1,5 @@
-1^132213312^|321123132312231132|^01/05/2025^Mandatory
+1^123312^|132213321|^01/05/2005^Mandatory
 2^bogdan^|23113|^18/03/2025^Mandatory
-3^123312^|132213321|^01/05/2005^Mandatory
+3^sala^|trebuie sa merg la sala la kickbox|^18/03/2025^Mandatory
+4^132213312^|321123132312231132|^01/05/2025^Mandatory
+5^magazin^|trebuie sa merg la magazin|^19/03/2025^Optional

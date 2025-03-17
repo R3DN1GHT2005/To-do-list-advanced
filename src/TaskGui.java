@@ -53,7 +53,7 @@ public class TaskGui extends JFrame {
         taskDateField.setFont(fieldFont);
         taskPanel.add(taskDateField);
 
-        JLabel priorityLabel = new JLabel("Priority:");
+        JLabel priorityLabel = new JLabel("Priority (* is Mandatory):");
         priorityLabel.setFont(labelFont);
         taskPanel.add(priorityLabel);
 
@@ -97,7 +97,7 @@ public class TaskGui extends JFrame {
         taskList = new JList<>(taskListModel);
         taskList.setFont(fieldFont);
         JScrollPane scrollPane = new JScrollPane(taskList);
-        scrollPane.setPreferredSize(new Dimension(screenSize.width,(int)(screenSize.height / 1.4f)));
+        scrollPane.setPreferredSize(new Dimension(screenSize.width,(int)(screenSize.height / 1.6f)));
         add(scrollPane, BorderLayout.SOUTH);
 
         addButton.addActionListener(new ActionListener() {
@@ -190,8 +190,14 @@ public class TaskGui extends JFrame {
             {
                 howlonguntil="Overdue by "+Math.abs(daysLeft)+" days";
             }
-            taskListModel.addElement(index+"     "+task.getTaskName() + "   " + task.getTaskDescription() + "   " + task.getTaskDue()+"   "+howlonguntil);
+            if (task.getTaskPriority()=="Mandatory")
+            {taskListModel.addElement(index+"*   "+task.getTaskName() + "   " + task.getTaskDescription() + "   " + task.getTaskDue()+"   "+howlonguntil);
             index++;
+            }
+            else 
+            {taskListModel.addElement(index+"    "+task.getTaskName() + "   " + task.getTaskDescription() + "   " + task.getTaskDue()+"   "+howlonguntil);
+            index++;
+            }
         }
     }
 
